@@ -3,8 +3,11 @@ layout: page
 title: ECS多元流行聲樂系統
 permalink: /index
 ---
-《ECS多元流行聲樂系統》 Millennial is a minimalist Jekyll theme. The purpose of this theme is to provide a simple, clean, content-focused publishing platform for your publication site or blog. You can find everything you need to get started under documentation. For more information on how to install and use this theme, check out \[the documentation\]({{ site.github.url }}{% post_url 2016-10-10-getting-started %}).
+ECS多元流行聲樂學院
+[![ECS多元流行聲樂學院](/assets/img/logo_ECS.jpg "ECS多元流行聲樂學院")](/ECS/index)
 
-![This is a cat](/uploads/cat.png "Title Cat")test
+夢。飛翔
+[![夢。飛翔](/assets/img/logo_DreamArts.jpg "夢。飛翔")](/DreamArts/index)
 
-test test
+夢。舞台
+[![夢。舞台](/assets/img/logo_DreamOfStage.jpg "夢。舞台")](/DreamOfStage/index)

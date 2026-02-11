@@ -125,7 +125,7 @@ th, td {
 
 // 音樂背景
 body {
-  background: linear-gradient(135deg, $stage-dark 0%, $stage-purple 50%, $stage-deep 100%);
+  background: linear-gradient(135deg, var(--stage-dark) 0%, var(--stage-main) 50%, var(--stage-deep) 100%);
   color: #f0f0f0;
   min-height: 100vh;
   position: relative;
@@ -159,37 +159,37 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  color: $music-gold;
+  color: var(--brand-primary);
   text-align: center;
   font-size: 2.5rem;
   margin: 2rem 0;
   
   &::before, &::after {
     content: " ♪ ";
-    animation: $pulse-animation;
+    animation: var(--pulse-animation);
   }
 }
 
 h2 {
-  color: $music-gold;
-  border-left: 4px solid $music-gold;
+  color: var(--brand-primary);
+  border-left: 4px solid var(--brand-primary);
   padding-left: 15px;
   margin-top: 2rem;
 }
 
 h3 {
-  color: $music-light;
+  color: var(--brand-secondary);
 }
 
 // 音樂化連結
 a {
-  color: $music-light;
+  color: var(--brand-secondary);
   text-decoration: none;
   transition: all 0.3s ease;
   position: relative;
   
   &:hover {
-    color: $music-gold;
+    color: var(--brand-primary);
     
     &::after {
       content: " ♫";
@@ -209,7 +209,7 @@ ul, ol {
       content: "♪";
       position: absolute;
       left: 0;
-      color: $music-gold;
+      color: var(--brand-primary);
       opacity: 0.5;
     }
   }

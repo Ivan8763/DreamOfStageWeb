@@ -98,15 +98,15 @@
 /* ====== 音樂主題文章 ====== */
 
 .post-content {
-  background: $transparent-light;
+  background: var(--transparent-light);
   backdrop-filter: blur(10px);
   border-radius: 20px;
-  border: 1px solid $transparent-gold;
+  border: 1px solid var(--transparent-primary);
   padding: 2.5rem;
   
   // 文章日期音樂化
   .post-date {
-    color: $music-gold;
+    color: var(--brand-primary);
     font-weight: bold;
     
     &::before {
@@ -118,18 +118,18 @@
 // 分享按鈕音樂化
 .sharing-icons a {
   display: inline-block;
-  background: $transparent-light;
+  background: var(--transparent-light);
   border-radius: 50%;
   width: 40px;
   height: 40px;
   line-height: 40px;
   text-align: center;
   margin: 0 5px;
-  border: 1px solid $transparent-gold;
+  border: 1px solid var(--transparent-primary);
   transition: all 0.3s ease;
   
   &:hover {
-    background: $transparent-gold;
+    background: var(--transparent-primary);
     transform: translateY(-5px);
     
     &::after {

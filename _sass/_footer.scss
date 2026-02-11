@@ -29,14 +29,14 @@
 }
 
 .footer {
-  background: linear-gradient(45deg, $stage-dark, $stage-purple) !important;
-  color: $music-gold !important;
+  background: linear-gradient(45deg, var(--stage-dark), var(--stage-main)) !important;
+  color: var(--brand-primary) !important;
   text-align: center;
   min-height: 150px;
   padding: 2rem 0;
   width: $container-width;
   position: relative;
-  border-top: 3px solid $music-gold;
+  border-top: 3px solid var(--brand-primary);
   margin-top: 4rem;
   
   // 音符裝飾
@@ -52,14 +52,14 @@
 }
 
 .footer a {
-  color: $music-light !important;
+  color: var(--brand-secondary) !important;
   padding: 0 15px;
   text-decoration: none;
   transition: all 0.3s;
   position: relative;
   
   &:hover {
-    color: $music-gold !important;
+    color: var(--brand-primary) !important;
     
     &::after {
       content: " ♫";
@@ -71,7 +71,7 @@
 .footer-description {
   display: block;
   margin: 1rem 0;
-  color: $music-light;
+  color: var(--brand-secondary);
   font-size: 0.9rem;
   opacity: 0.8;
 }
@@ -83,7 +83,7 @@
   
   span {
     margin: 0 10px;
-    animation: $float-animation;
+    animation: var(--float-animation);
     
     &:nth-child(2) {
       animation-delay: 0.5s;

@@ -1,0 +1,71 @@
+// ====== 品牌主題顏色系統 ======
+
+// 預設主題（Landing Page） - 現有紫色主題
+:root {
+  // 背景色系
+  --stage-dark: #0f0c29;
+  --stage-main: #302b63;
+  --stage-deep: #24243e;
+  
+  // 強調色
+  --brand-primary: #ffd700;     // 金黃色
+  --brand-secondary: #a3d9ff;   // 淺藍
+  --brand-accent: #ff8a00;      // 橘色
+  
+  // 透明層
+  --transparent-dark: rgba(0, 0, 0, 0.7);
+  --transparent-light: rgba(255, 255, 255, 0.1);
+  --transparent-primary: rgba(255, 215, 0, 0.3);
+
+  // 動畫變數
+  --pulse-animation: pulse 2s infinite;
+  --float-animation: float 3s infinite ease-in-out;
+}
+
+// ECS 品牌主題（紅色系）
+.brand-ecs {
+  --stage-dark: #1a0b0b;
+  --stage-main: #4a1f1f;
+  --stage-deep: #2c1212;
+  
+  --brand-primary: #ff6b6b;     // 紅色系
+  --brand-secondary: #ffcccb;   // 粉紅
+  --brand-accent: #ff4757;      // 亮紅
+  
+  --transparent-primary: rgba(255, 107, 107, 0.3);
+
+  --pulse-animation: pulse 2s infinite;
+  --float-animation: float 3s infinite ease-in-out;
+}
+
+// 夢。飛翔品牌主題（青色系）
+.brand-dream {
+  --stage-dark: #0b1a1a;
+  --stage-main: #1f4a4a;
+  --stage-deep: #122c2c;
+  
+  --brand-primary: #4ecdc4;     // 青色系
+  --brand-secondary: #a3fffa;   // 淺青
+  --brand-accent: #00d4c4;      // 亮青
+  
+  --transparent-primary: rgba(78, 205, 196, 0.3);
+
+  --pulse-animation: pulse 2s infinite;
+  --float-animation: float 3s infinite ease-in-out;
+}
+
+// 夢。舞台品牌主題（藍色系）
+.brand-stage {
+  --stage-dark: #0b0b1a;
+  --stage-main: #1f1f4a;
+  --stage-deep: #12122c;
+  
+  --brand-primary: #45b7d1;     // 藍色系
+  --brand-secondary: #a3d9ff;   // 淺藍
+  --brand-accent: #2e86de;      // 亮藍
+  
+  --transparent-primary: rgba(69, 183, 209, 0.3);
+
+  --pulse-animation: pulse 2s infinite;
+  --float-animation: float 3s infinite ease-in-out;
+}

@@ -61,7 +61,7 @@
 .featured-post {
   border-radius: 15px;
   overflow: hidden;
-  border: 2px solid $transparent-gold;
+  border: 2px solid var(--transparent-primary);
   position: relative;
   
   &::before {
@@ -70,34 +70,34 @@
     top: 20px;
     right: 20px;
     font-size: 2rem;
-    color: $music-gold;
+    color: var(--brand-primary);
     opacity: 0.5;
     z-index: 2;
   }
   
   h2 span {
-    background: $transparent-dark !important;
+    background: var(--transparent-dark) !important;
     backdrop-filter: blur(5px);
-    border: 1px solid $music-gold;
+    border: 1px solid var(--brand-primary);
   }
 }
 
 // 分頁器音樂化
 .pagination-button {
-  background: $transparent-light;
-  border: 1px solid $music-gold;
-  color: $music-light;
+  background: var(--transparent-light);
+  border: 1px solid var(--brand-primary);
+  color: var(--brand-secondary);
   border-radius: 50px;
   transition: all 0.3s ease;
   
   &:hover {
-    background: $transparent-gold;
-    color: $music-gold;
+    background: var(--transparent-primary);
+    color: var(--brand-primary);
     transform: translateY(-3px);
   }
 }
 
 .pagination-active {
-  background: $music-gold !important;
-  color: $stage-dark !important;
+  background: var(--brand-primary) !important;
+  color: var(--stage-dark) !important;
 }

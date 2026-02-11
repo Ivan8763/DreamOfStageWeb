@@ -1,0 +1,21 @@
+{% comment %} _includes/get-brand-class.html {% endcomment %}
+
+{% assign brand_class = "" %}
+
+{% comment %} 1. 品牌頁面檢測 {% endcomment %}
+{% if page.url contains '/DreamArts/' %}
+  {% assign brand_class = "brand-dream" %}
+  
+{% elsif page.url contains '/DreamOfStage/' %}
+  {% assign brand_class = "brand-stage" %}
+  
+{% elsif page.url contains '/ECS/' %}
+  {% assign brand_class = "brand-ecs" %}
+  
+{% comment %} 2. 首頁保持預設（無品牌 class） {% endcomment %}
+{% else %}
+  {% assign brand_class = "" %}
+  
+{% endif %}
+
+{{ brand_class }}

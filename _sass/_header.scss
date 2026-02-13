@@ -96,10 +96,10 @@
 /* ====== 音樂主題導航列 ====== */
 
 .site-header {
-  background: var(--stage-dark) !important;
+  background: var(--stage-main) !important;
   backdrop-filter: blur(10px);
   border-bottom: 2px solid var(--brand-primary);
-  box-shadow: 0 5px 20px rgba(255, 215, 0, 0.2);
+  box-shadow: 0 5px 20px var(--brand-accent);
 }
 
 .site-title {

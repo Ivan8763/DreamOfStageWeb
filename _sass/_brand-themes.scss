@@ -1,89 +1,93 @@
 // ====== 品牌主題顏色系統 ======
 
-// 預設主題（Landing Page）
+// 1. 預設主頁（大 Landing Page）
+// 概念：神秘夜空、群星閃爍，代表「夢想的起點」
 :root {
-  // 背景色系
-  --stage-dark: #0f0c29;
-  --stage-main: #302b63;
-  --stage-deep: #24243e;
+  // 背景色系：溫暖清透的晨曦微光漸變（極淺淡黃與粉白）
+  --stage-main: #fffdf9;   // 晨曦暖白
+  --stage-dark: #fff9ed;   // 柔和微光金
+  --stage-deep: #fff3db;   // 溫暖陽光底色
   
-  // 強調色
-  --brand-primary: #ffd700;
-  --brand-secondary: #a3d9ff;
-  --brand-accent: #ff8a00;
+  // 強調色：與背景對比鮮明的「晨曦金」與「深星空藍」
+  --brand-primary: #d4a373;     // 質感大地金（大標題，溫暖有力量）
+  --brand-secondary: #1a2d42;   // 深邃星空藍（內文專用！確保在淺底上極致清晰）
+  --brand-accent: #e76f51;      // 活力暖橙（按鈕、Hover、音符，點亮畫面）
   
   // 透明層
-  --transparent-dark: rgba(0, 0, 0, 0.7);
-  --transparent-light: rgba(255, 255, 255, 0.1);
-  --transparent-primary: rgba(255, 215, 0, 0.3);
+  --transparent-dark: rgba(26, 45, 66, 0.05);
+  --transparent-light: rgba(255, 255, 255, 0.9);
+  --transparent-primary: rgba(212, 163, 115, 0.15);
 
-  // 動畫變數
+  // 動畫
   --pulse-animation: pulse 2s infinite;
   --float-animation: float 3s infinite ease-in-out;
 }
 
-// ECS 品牌主題
-.brand-ecs {
-  // 背景色系
-  --stage-main: #fff8e7;
-  --stage-dark: #fff8de;
-  --stage-deep: #fff2d9;
-
-  // 強調色
-  --brand-primary: #bd4949;
-  --brand-secondary: #135076;
-  --brand-accent: #637452;
-  
-  // 透明層
-  --transparent-dark: rgba(0, 0, 0, 0.08);
-  --transparent-light: rgba(255, 255, 255, 0.7);
-  --transparent-primary: rgba(61, 107, 92, 0.15);
-
-  // 動畫變數
-  --pulse-animation: pulse 2s infinite;
-  --float-animation: float 3s infinite ease-in-out;
-}
-
-// 夢。飛翔品牌主題
+// 2. DreamArts (夢。飛翔)
+// 概念：晴空萬里、展翅高飛。專為小朋友設計，純潔、自由、充滿希望。
 .brand-dream {
-  // 背景色系
-  --stage-main: #e6f3ff;
-  --stage-dark: #f5f9ff;
-  --stage-deep: #d9ecff;
+  // 背景色系：極淺的天空藍與白雲漸變（明亮不刺眼）
+  --stage-main: #f4f9ff;   // 純淨晴空藍
+  --stage-dark: #e8f4ff;   // 舒適微風藍
+  --stage-deep: #dcdafa;   // 遠處的夢幻粉紫藍
 
-  // 強調色
-  --brand-primary: #6e3b3d;
-  --brand-secondary: #893006;
-  --brand-accent: #6e78c3;
+  // 強調色：高對比的「青空深藍」與飛翔的「朝氣珊瑚粉」
+  --brand-primary: #0077b6;     // 展翅青空藍（標題，醒目且充滿希望）
+  --brand-secondary: #22333b;   // 夜空深灰藍（內文，與淺藍背景形成強烈對比）
+  --brand-accent: #f26419;      // 朝氣活力橘/珊瑚粉（點綴、Hover，像陽光般亮眼）
   
   // 透明層
-  --transparent-dark: rgba(0, 0, 0, 0.08);
-  --transparent-light: rgba(255, 255, 255, 0.7);
-  --transparent-primary: rgba(46, 92, 78, 0.15);
+  --transparent-dark: rgba(0, 119, 182, 0.06);
+  --transparent-light: rgba(255, 255, 255, 0.85);
+  --transparent-primary: rgba(0, 119, 182, 0.12);
 
-  // 動畫變數
+  // 動畫
   --pulse-animation: pulse 2s infinite;
   --float-animation: float 3s infinite ease-in-out;
 }
 
-// 夢。舞台品牌主題
+// 3. DreamOfStage (夢。舞台)
+// 概念：璀璨舞台、成人圓夢。拋棄死板的深色，改用華麗尊貴的「淺金色巨星舞台」風格。
 .brand-stage {
-  // 背景色系
-  --stage-main: #ffe0b5;
-  --stage-dark: #ffe8cc;
-  --stage-deep: #ffd6a0;
-  
-  // 強調色
-  --brand-primary: #3a7ca5;
-  --brand-secondary: #2e0080;
-  --brand-accent: #84283f;
+  // 背景色系：奢華淺香檳金與絲絨白漸變（得體、高雅、高貴）
+  --stage-main: #fdfbf7;   // 頂級香檳白
+  --stage-dark: #f8f1e5;   // 絲滑香檳金
+  --stage-deep: #eedfc7;   // 華麗射燈金
+
+  // 強調色：巨星專屬的「奢華爵士紫」與「聚光燈金」
+  --brand-primary: #5c3d75;     // 尊貴爵士紫（大標題，在香檳底色上極度強烈、優雅）
+  --brand-secondary: #2b1f3d;   // 深絲絨紫黑（內文，高對比度、沉穩專業）
+  --brand-accent: #ca9732;      // 聚光燈純金（按鈕、Hover，帶出巨星感）
   
   // 透明層
-  --transparent-dark: rgba(0, 0, 0, 0.08);
-  --transparent-light: rgba(255, 255, 255, 0.7);
-  --transparent-primary: rgba(58, 124, 165, 0.15);
+  --transparent-dark: rgba(92, 61, 117, 0.05);
+  --transparent-light: rgba(255, 255, 255, 0.85);
+  --transparent-primary: rgba(92, 61, 117, 0.12);
 
-  // 動畫變數
+  // 動畫
+  --pulse-animation: pulse 2s infinite;
+  --float-animation: float 3s infinite ease-in-out;
+}
+
+// 4. ECS (聲樂教學系統)
+// 概念：科學發聲、綠意盎然。用代表知識、自然與生機的「清新植物學風格」。
+.brand-ecs {
+  // 背景色系：極淺的薄荷綠、清水混凝土與象牙白漸變
+  --stage-main: #f7fbf7;   // 清新薄荷白
+  --stage-dark: #edf4ed;   // 呼吸感淺綠
+  --stage-deep: #dfebdf;   // 專業有機沙色
+
+  // 強調色：治癒系「森林深墨綠」與「科學嚴謹紅」
+  --brand-primary: #1e4620;     // 森林深墨綠（大標題，象徵成套系統的穩固與權威）
+  --brand-secondary: #1c251d;   // 針葉深綠黑（內文，極高對比，非常護眼且專業）
+  --brand-accent: #bc3908;      // 鐵鏽紅磚色（重點標記、Hover，畫龍點睛）
+  
+  // 透明層
+  --transparent-dark: rgba(30, 70, 32, 0.05);
+  --transparent-light: rgba(255, 255, 255, 0.85);
+  --transparent-primary: rgba(30, 70, 32, 0.12);
+
+  // 動畫
   --pulse-animation: pulse 2s infinite;
   --float-animation: float 3s infinite ease-in-out;
 }
